@@ -153,10 +153,10 @@ console.log(pizza);
 //     const sum: FType = f;
 // }
 //=======
-function declarationFunc(a: number, b: number): number {
-    return a + b;
-}
+// function declarationFunc(a: number, b: number): number {
+//     return a + b;
+// }
 
-console.log("{*} ===> declarationFunc(2 + 2)", declarationFunc(2, 2));
+// console.log("{*} ===> declarationFunc(2 + 2)", declarationFunc(2, 2));
 
 export { };

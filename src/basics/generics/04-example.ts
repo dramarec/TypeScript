@@ -2,20 +2,20 @@ type TAnimationState = "playing" | "paused";
 type THttpState = "request" | "success" | "error";
 
 const makeState = <S>(initialState: S) => {
-  let state = initialState;
+    let state = initialState;
 
-  const getState = () => {
-    return state;
-  };
+    const getState = () => {
+        return state;
+    };
 
-  const setState = (newState: S) => {
-    state = newState;
-  };
+    const setState = (newState: S) => {
+        state = newState;
+    };
 
-  return {
-    getState,
-    setState,
-  };
+    return {
+        getState,
+        setState,
+    };
 };
 
 const animationState = makeState<TAnimationState>("playing");
@@ -26,4 +26,5 @@ const httpState = makeState<THttpState>("success");
 httpState.setState("request");
 // httpState.setState("playing"); // ошибка
 
-export {};
+export { };
+// useState<{name: string | null}>({name:''})
