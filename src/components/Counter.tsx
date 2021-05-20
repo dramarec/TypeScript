@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import './Counter.css';
 
 interface Props {
@@ -21,7 +21,6 @@ export default class Counter extends Component<Props, State> {
     };
 
     increment = () => this.setState(({ value }) => ({ value: value + 1 }));
-
     decrement = () => this.setState(({ value }) => ({ value: value - 1 }));
 
     render() {
