@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 import Counter from './Counter';
 import CounterFn from './CounterFn';
 import ColorPicker from './ColorPicker';
+import Form from './Form';
 
 const colorPickerOptions = [
     { label: 'red', color: '#F44336' },
@@ -27,6 +28,9 @@ const App = () => (
             <li>
                 <Link to="/colorpicker">Колорпикер</Link>
             </li>
+            <li>
+                <Link to="/form">Форма</Link>
+            </li>
         </ul>
 
         <Switch>
@@ -38,6 +42,9 @@ const App = () => (
             </Route>
             <Route path="/colorpicker">
                 <ColorPicker options={colorPickerOptions} />
+            </Route>
+            <Route path="/form">
+                <Form onSubmit={credProp => console.log(credProp)} />
             </Route>
         </Switch>
     </>
