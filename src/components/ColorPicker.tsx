@@ -6,11 +6,6 @@ type Option = {
     color: string;
 };
 
-// interface Props {
-//     options: Option[];
-//     initialOptionPos?: number;
-// }
-
 interface Props {
     options: Option[];
     initialOptionPos?: number;

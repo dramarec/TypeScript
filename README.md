@@ -9,4 +9,7 @@
 - [interface vs type](https://pawelgrzybek.com/typescript-interface-vs-type/)
 
 ## 
-[React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/)
+- [React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/)
+
+##
+- [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)

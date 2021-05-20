@@ -152,11 +152,27 @@ console.log(pizza);
 
 //     const sum: FType = f;
 // }
-//=======
+// * =======
+type TFn = (a: number, b: number) => number
+
+interface IFn {
+    (a: number, b: number): number
+}
+
+const expressionFunc: TFn = function (a, b) {
+    return a + b;
+}
 // function declarationFunc(a: number, b: number): number {
+// function declarationFunc(a, b): IFn {
 //     return a + b;
 // }
 
+const arrowFunc: IFn = (a, b) => {
+    return a + b;
+}
+console.log("{*} ===> declarationFunc(2 + 2)", expressionFunc(2, 2));
 // console.log("{*} ===> declarationFunc(2 + 2)", declarationFunc(2, 2));
+console.log("{*} ===> arrowFunc ===> arrowFunc", arrowFunc(5, 5));
+
 
 export { };

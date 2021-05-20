@@ -4,6 +4,7 @@ import Counter from './Counter';
 import CounterFn from './CounterFn';
 import ColorPicker from './ColorPicker';
 import Form from './Form';
+import TodosView from './Todos/TodosView';
 
 const colorPickerOptions = [
     { label: 'red', color: '#F44336' },
@@ -31,6 +32,9 @@ const App = () => (
             <li>
                 <Link to="/form">Форма</Link>
             </li>
+            <li>
+                <Link to="/sync-todos">Заметки</Link>
+            </li>
         </ul>
 
         <Switch>
@@ -45,6 +49,9 @@ const App = () => (
             </Route>
             <Route path="/form">
                 <Form onSubmit={credProp => console.log(credProp)} />
+            </Route>
+            <Route path="/sync-todos">
+                <TodosView />
             </Route>
         </Switch>
     </>
