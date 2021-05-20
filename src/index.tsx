@@ -1,3 +1,4 @@
-import './basics';
+// import './basics/basics';
+import './basics/generics';
 
 export {};
