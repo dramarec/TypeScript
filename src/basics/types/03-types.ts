@@ -1,5 +1,7 @@
 /*
  * Кастомные типы с Type
+ * - для описания композитных типов и юнионов
+ TODO  type X = string | number | boolean
  * - Идентификатор c type composition
  * - Состояние с union - один из многих
  */

@@ -3,7 +3,7 @@
  * - extends
  */
 
-
+//расширение дженерика
 interface ILength {
     length: number;
 }
